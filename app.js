@@ -224,17 +224,17 @@ Student.prototype.scope = function() {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// joe.scope();
+joe.scope();
 
 Student.prototype.scopeArrow = () => console.log(this);
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// joe.scopeArrow();
+joe.scopeArrow();
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
-//
+// The student object instance for Joe Schmoe
 // 2. What is "this" when joe.scopeArrow() is invoked?
-//
+// The global window object
 // 3. Explain why "this" is different when an arrow function is used.
-//
+// In an arrow function "this" is not reset like in a function expression or declaration. When using an arrow function "this" will refer to the "this" of it's enclosing function, or if one isn't present the window object itself in a browser.
